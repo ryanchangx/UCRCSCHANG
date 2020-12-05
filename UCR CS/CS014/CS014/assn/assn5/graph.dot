@@ -1,0 +1,33 @@
+digraph G{
+	//vertices
+	Lodi[label="Lodi(0)"];
+	Nile[label="Nile(2)"];
+	Mondavi[label="Mondavi(1)"];
+	Rivoli[label="Rivoli(1)"];
+	Pyramids[label="Pyramids(1)"];
+	Zurich[label="Zurich(2)"];
+	Marengo[label="Marengo(2)"];
+	Friedland[label="Friedland(2)"];
+
+	//edges
+	Lodi->Pyramids;
+	Lodi->Rivoli;
+	Lodi->Mondavi;
+	Nile->Marengo;
+	Nile->Rivoli;
+	Mondavi->Friedland;
+	Mondavi->Zurich;
+	Mondavi->Nile;
+	Mondavi->Lodi;
+	Rivoli->Nile;
+	Pyramids->Marengo;
+	Pyramids->Lodi;
+	Pyramids->Mondavi;
+	Zurich->Lodi;
+	Zurich->Pyramids;
+	Zurich->Nile;
+	Marengo->Rivoli;
+	Friedland->Marengo;
+	Friedland->Nile;
+	Friedland->Mondavi;
+}
